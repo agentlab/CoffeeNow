@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="ru.agentlab.telegrambots.feature"
+      label="TelegramBots Feature"
+      version="1.0.0.qualifier"
+      provider-name="AgentLab">
+
+   <description url="https://github.com/agentlab/CoffeeNow">
+      AgentLab TelegramBots Feature
+   </description>
+
+   <copyright url="https://github.com/agentlab/CoffeeNow">
+      AgentLab and Students
+   </copyright>
+
+   <license url="https://github.com/agentlab/CoffeeNow">
+      Eclipse Public License
+   </license>
+
+   <requires>
+      <import plugin="com.fasterxml.jackson.core.jackson-annotations"/>
+      <import plugin="com.fasterxml.jackson.core.jackson-core"/>
+      <import plugin="com.fasterxml.jackson.core.jackson-databind"/>
+      <import plugin="com.google.guava"/>
+      <import plugin="com.google.inject"/>
+      <import plugin="org.json"/>
+      <import plugin="javax.ws.rs-api"/>
+      <import plugin="org.apache.commons.io"/>
+      <import plugin="org.apache.httpcomponents.httpcore"/>
+      <import plugin="org.apache.httpcomponents.httpclient"/>
+      <import plugin="org.eclipse.osgi.services"/>
+   </requires>
+
+   <plugin
+         id="org.telegram.telegrambots"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ru.agentlab.telegrambots.service"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

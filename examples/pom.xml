@@ -13,6 +13,7 @@
 	</parent>
 	
 	<modules>
+		<module>ru.agentlab.telegrambots.service.examples</module>
 	</modules>
 
 </project>

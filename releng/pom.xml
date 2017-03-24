@@ -14,6 +14,5 @@
 	
 	<modules>
 		<module>ru.agentlab.coffeenow.releng</module>
-		<!--<module>ru.agentlab.coffeenow.app.product</module>-->
 	</modules>
 </project>

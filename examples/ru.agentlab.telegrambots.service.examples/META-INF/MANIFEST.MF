@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: TelegramBots Service Tests
+Bundle-SymbolicName: ru.agentlab.telegrambots.service.examples
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.framework;version="1.8.0",
+ org.osgi.service.component.annotations;version="1.3.0",
+ org.slf4j,
+ org.telegram.telegrambots,
+ org.telegram.telegrambots.api.methods.send,
+ org.telegram.telegrambots.api.objects,
+ org.telegram.telegrambots.bots,
+ org.telegram.telegrambots.exceptions,
+ org.telegram.telegrambots.generics,
+ org.telegram.telegrambots.logging,
+ ru.telegram.telegrambots,
+ ru.telegram.telegrambots.bots
+Service-Component: OSGI-INF/ru.agentlab.telegrambots.service.examples.MyBot.xml
+Bundle-ActivationPolicy: lazy

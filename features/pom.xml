@@ -13,7 +13,7 @@
 	</parent>
 	
 	<modules>
-		<!--<module>ru.agentlab.coffeenow.app.feature</module>-->
+		<module>ru.agentlab.telegrambots.feature</module>
 	</modules>
 
 	<build>
