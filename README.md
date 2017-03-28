@@ -5,7 +5,7 @@ Coffee Shop Intelligent Assistant
 
 0. Prerequisits: JDK 8, Maven 3.x, Eclipse Installer
 
-1. Use this information for instructions in par.2
+1. Use this information for instructions in paragraph #2
 
   * Eclipse Product: Eclipse IDE for Java with Maven and Tools
   * Product version: Neon
