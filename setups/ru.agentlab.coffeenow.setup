@@ -85,6 +85,12 @@
       <requirement
           name="org.json"/>
       <requirement
+          name="org.hypergraphdb.feature.feature.group"/>
+      <requirement
+          name="org.hypergraphdb.app.management.feature.feature.group"/>
+      <requirement
+          name="org.hypergraphdb.prolog.feature.feature.group"/>
+      <requirement
           name="*"/>
       <sourceLocator
           rootFolder="${ru.agentlab.coffeenow.git.clone.location}"
@@ -93,11 +99,15 @@
           name="Neon">
         <repository
             url="http://agentlab.ru/pd/p2/eclipseorbit/"/>
+        <repository
+            url="http://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
       </repositoryList>
       <repositoryList
           name="Oxygen">
         <repository
             url="http://agentlab.ru/pd/p2/eclipseorbit/"/>
+        <repository
+            url="http://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
       </repositoryList>
     </targlet>
   </setupTask>
