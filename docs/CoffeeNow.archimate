@@ -154,7 +154,7 @@
     <element xsi:type="archimate:AggregationRelationship" id="70222cd4-2199-448f-8add-67a83a237976" source="0ba97da2-25d2-4d57-a20f-8ebc83c3294c" target="aff24e21-cb5e-49ec-b208-8a9970bf0fba"/>
   </folder>
   <folder name="Views" id="2e0e22b4" type="diagrams">
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="6fc6b463">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Развертывание - система" id="6fc6b463">
       <child xsi:type="archimate:DiagramObject" id="cbcdf176" archimateElement="f1727039">
         <bounds x="576" y="240" width="505" height="421"/>
         <child xsi:type="archimate:DiagramObject" id="468442ad" archimateElement="382da629">
@@ -199,34 +199,10 @@ OSGi -- отраслевой стандарт.</content>
         <bounds x="646" y="708" width="185" height="80"/>
         <content>Service Component Runtime (сервис желтых страниц, занимающийся сводничеством других сервисов)</content>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="a7581ff3" targetConnections="1a58fe6d-7d8f-4859-a104-ee0555009ef4" archimateElement="d2e78540">
-        <bounds x="384" y="72" width="253" height="133"/>
-        <sourceConnection xsi:type="archimate:Connection" id="3f4ef30e-e3bf-4864-8bee-f88e38311a30" source="a7581ff3" target="eb23e3d3-26d7-413f-8d4d-35bb594d7796" archimateRelationship="6b384c44-318f-4536-9f3b-211754822f3c"/>
-        <child xsi:type="archimate:DiagramObject" id="eb23e3d3-26d7-413f-8d4d-35bb594d7796" targetConnections="3f4ef30e-e3bf-4864-8bee-f88e38311a30" archimateElement="bc7d1f3d-a050-4943-a531-8fe15c63ca99">
-          <bounds x="48" y="34" width="120" height="55"/>
-        </child>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="3f865b0c" targetConnections="134de1ab-fab9-4c66-8df6-6fb6737fe2f8" archimateElement="7699e765">
-        <bounds x="685" y="-48" width="120" height="55"/>
-        <sourceConnection xsi:type="archimate:Connection" id="a422cb7d-07ce-4ed5-8dbc-3c844d8f2846" source="3f865b0c" target="d102d839-e7b5-4a19-938e-01ccf2a36f7e" archimateRelationship="4de0223d-adcd-4d7a-9cf1-291af242dcb5"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="3a5df6c7" targetConnections="55139eb4-7d30-4f27-a4b6-6c006d3b8496" archimateElement="ad8901cb">
-        <bounds x="852" y="72" width="120" height="55"/>
-        <sourceConnection xsi:type="archimate:Connection" id="134de1ab-fab9-4c66-8df6-6fb6737fe2f8" source="3a5df6c7" target="3f865b0c" archimateRelationship="3da5fba4-f3a6-477c-a11a-f967312979d0"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="d102d839-e7b5-4a19-938e-01ccf2a36f7e" targetConnections="a422cb7d-07ce-4ed5-8dbc-3c844d8f2846" archimateElement="aff24e21-cb5e-49ec-b208-8a9970bf0fba">
-        <bounds x="678" y="36" width="133" height="55"/>
-      </child>
-      <child xsi:type="archimate:Note" id="86306d50-0881-4b4d-bf36-d09c6b6c78e1" textAlignment="1">
-        <bounds x="668" y="144" width="113" height="37"/>
-        <sourceConnection id="1a58fe6d-7d8f-4859-a104-ee0555009ef4" source="86306d50-0881-4b4d-bf36-d09c6b6c78e1" target="a7581ff3"/>
-        <sourceConnection id="55139eb4-7d30-4f27-a4b6-6c006d3b8496" source="86306d50-0881-4b4d-bf36-d09c6b6c78e1" target="3a5df6c7"/>
-        <content>Реализуют WhiteBoard Pattern</content>
-      </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Компоненты - система" id="a1d73723-249e-44a3-b1b7-011703e2c8ea">
       <child xsi:type="archimate:DiagramObject" id="a4a0672f-52f3-40f5-8b0c-9b6f0bfbb50f" archimateElement="c25b021c">
-        <bounds x="312" y="354" width="120" height="55"/>
+        <bounds x="360" y="354" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="a18c33d9-dcd6-4fdb-8d56-871bbbaeaf42" source="a4a0672f-52f3-40f5-8b0c-9b6f0bfbb50f" target="99142f92-9ac8-42d9-ae60-e855556f03d1" archimateRelationship="c6689179-bc81-45f4-94c3-612dac9c9874"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="0fda4879-89c8-4d7a-83ec-dd571101bb82" targetConnections="8557a6c9-2050-4939-a18c-294c5f2480e2" archimateElement="7699e765">
@@ -240,22 +216,22 @@ OSGi -- отраслевой стандарт.</content>
         <sourceConnection xsi:type="archimate:Connection" id="7245ccb5-d6a7-419e-8ddf-40d0d73a6a7f" source="e7c8b55a-bb8b-451f-998e-4039987e62c4" target="b97cb34f-6eb7-4d08-ad93-23ad33e6c178" archimateRelationship="59aa65d2-d5dd-4db6-8171-2eb6f957d546"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="00cbf241-88e3-4079-8b37-2d09d94dc756" targetConnections="690481ff-c357-486c-b444-d8dce01c627f" archimateElement="d2e78540">
-        <bounds x="276" y="60" width="231" height="192"/>
+        <bounds x="348" y="60" width="169" height="192"/>
         <sourceConnection xsi:type="archimate:Connection" id="8786db4b-33dd-49ea-a536-9f0a41660f82" source="00cbf241-88e3-4079-8b37-2d09d94dc756" target="99142f92-9ac8-42d9-ae60-e855556f03d1" archimateRelationship="6b384c44-318f-4536-9f3b-211754822f3c"/>
         <sourceConnection xsi:type="archimate:Connection" id="fb5b94f6-499a-49eb-9524-943f556ecc61" source="00cbf241-88e3-4079-8b37-2d09d94dc756" target="547923c5-68fb-471e-ba0c-bad15041dd31" archimateRelationship="ce802a7f-fa58-4d5a-b8c9-a070a343dbe2"/>
         <child xsi:type="archimate:DiagramObject" id="99142f92-9ac8-42d9-ae60-e855556f03d1" targetConnections="8786db4b-33dd-49ea-a536-9f0a41660f82 a18c33d9-dcd6-4fdb-8d56-871bbbaeaf42" archimateElement="bc7d1f3d-a050-4943-a531-8fe15c63ca99">
-          <bounds x="12" y="108" width="205" height="55"/>
+          <bounds x="12" y="108" width="120" height="73"/>
           <sourceConnection xsi:type="archimate:Connection" id="9fb2c604-7c87-42b8-bcb2-d529a9495d84" source="99142f92-9ac8-42d9-ae60-e855556f03d1" target="547923c5-68fb-471e-ba0c-bad15041dd31" archimateRelationship="bb70e891-26a1-43db-9e59-42aec3ed0fb7"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="547923c5-68fb-471e-ba0c-bad15041dd31" targetConnections="fb5b94f6-499a-49eb-9524-943f556ecc61 06e07df5-a514-4c8f-a516-d7540936a617 0c8be2f8-d325-41a7-b7b9-f496507151df eb3faf2a-78e9-4ac8-a6b1-ceceb5ab3868 9fb2c604-7c87-42b8-bcb2-d529a9495d84" archimateElement="346017e8-ac8f-4c43-b3b6-d8dc94f77fa1">
-          <bounds x="36" y="36" width="120" height="55"/>
+          <bounds x="12" y="36" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="cd118da3-b680-46b8-95da-b29c055420fb" source="547923c5-68fb-471e-ba0c-bad15041dd31" target="25e7e055-3749-48a4-8627-6501b7d988f5" archimateRelationship="3ff24192-b170-4e51-99d1-48d6a9b3451f">
             <bendpoint startX="-156" startY="-15" endX="56" endY="149"/>
           </sourceConnection>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="25e7e055-3749-48a4-8627-6501b7d988f5" targetConnections="cd118da3-b680-46b8-95da-b29c055420fb 616677fe-be4b-4226-b35a-ff07e7d2ac9d" archimateElement="8fc3857d-86ce-457d-a010-074fb4757569">
-        <bounds x="92" y="-68" width="136" height="55"/>
+        <bounds x="180" y="-68" width="136" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="06e07df5-a514-4c8f-a516-d7540936a617" source="25e7e055-3749-48a4-8627-6501b7d988f5" target="547923c5-68fb-471e-ba0c-bad15041dd31" archimateRelationship="5b926e2b-3b45-4f71-8516-712c1223d90d">
           <bendpoint startX="44" startY="185" endX="-168" endY="21"/>
         </sourceConnection>
@@ -304,7 +280,7 @@ OSGi -- отраслевой стандарт.</content>
         </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="b4863ca3-36f1-4906-b710-3d8d1ea6cbab" targetConnections="1ec94254-bfa7-453a-bd66-751e23da1b2f" archimateElement="eff8c93c-e55d-4898-96e9-c48fa8c9c201">
-        <bounds x="100" y="480" width="120" height="55"/>
+        <bounds x="188" y="480" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="616677fe-be4b-4226-b35a-ff07e7d2ac9d" source="b4863ca3-36f1-4906-b710-3d8d1ea6cbab" target="25e7e055-3749-48a4-8627-6501b7d988f5" archimateRelationship="cbf324b8-fb7d-485b-813b-67f638fcdca9">
           <bendpoint startX="-40" startY="-326" endX="-40" endY="294"/>
         </sourceConnection>
@@ -442,7 +418,7 @@ OSGi -- отраслевой стандарт.</content>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Компоненты - примеры использования" id="f9fcbac1-c208-4ba0-94f4-47dcab93caa9" viewpoint="application_cooperation">
-      <child xsi:type="archimate:DiagramObject" id="9f85453d-1810-40ed-8adc-b283c15485ac" targetConnections="25692aeb-960e-4fe8-9b05-7e24600d3cbb" archimateElement="ad8901cb">
+      <child xsi:type="archimate:DiagramObject" id="9f85453d-1810-40ed-8adc-b283c15485ac" targetConnections="25692aeb-960e-4fe8-9b05-7e24600d3cbb c381b84e-2abc-4e35-ac64-0c311033b8a1" archimateElement="ad8901cb">
         <bounds x="864" y="240" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="1e45f1f4-be2b-4f82-950b-eae326964af6" source="9f85453d-1810-40ed-8adc-b283c15485ac" target="caad4630-86fe-447a-901f-4615e19f33e8" archimateRelationship="3da5fba4-f3a6-477c-a11a-f967312979d0"/>
         <sourceConnection xsi:type="archimate:Connection" id="564738df-1c72-4e03-b119-1ed6edfbf498" source="9f85453d-1810-40ed-8adc-b283c15485ac" target="f6e64d4c-b3e7-4bc2-8775-4099b9399f43" archimateRelationship="3e12ac6b-ca14-4666-9fa0-f76b9fcbb163"/>
@@ -472,7 +448,7 @@ OSGi -- отраслевой стандарт.</content>
         <sourceConnection xsi:type="archimate:Connection" id="e7fd1d80-c5bb-4634-8353-1336de026c11" source="33f0796f-d924-4455-892f-f889da7ee267" target="09f4a41f-8b0c-4b50-8c5e-9ab3efebbb4c" archimateRelationship="f5c9992b-77f9-4da6-81dc-92aba026107e"/>
         <sourceConnection xsi:type="archimate:Connection" id="b84af46a-1f61-41a2-8820-b291e0e5e0cf" source="33f0796f-d924-4455-892f-f889da7ee267" target="fff903f8-0ad4-4147-8fa7-0c98a2dd2810" archimateRelationship="0f037812-e159-4a5c-ab87-7722c2a5bcbc"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="d2dd76c5-3e1e-43c2-9c02-36b90d6970de" targetConnections="39d131f6-3d19-476d-9d5d-853bdb87d6d3" archimateElement="d2e78540">
+      <child xsi:type="archimate:DiagramObject" id="d2dd76c5-3e1e-43c2-9c02-36b90d6970de" targetConnections="39d131f6-3d19-476d-9d5d-853bdb87d6d3 df78feb8-952e-42e7-8bc7-71652eeeb7e5" archimateElement="d2e78540">
         <bounds x="372" y="60" width="231" height="192"/>
         <sourceConnection xsi:type="archimate:Connection" id="bb19167d-0a6a-491d-a30d-14d3a295db40" source="d2dd76c5-3e1e-43c2-9c02-36b90d6970de" target="f5546ec8-5486-4f7f-92f5-8e6cd3b99f44" archimateRelationship="6b384c44-318f-4536-9f3b-211754822f3c"/>
         <sourceConnection xsi:type="archimate:Connection" id="a900d08c-88e2-4f0a-89c0-e6c2f23f930f" source="d2dd76c5-3e1e-43c2-9c02-36b90d6970de" target="fff903f8-0ad4-4147-8fa7-0c98a2dd2810" archimateRelationship="ce802a7f-fa58-4d5a-b8c9-a070a343dbe2"/>
@@ -546,6 +522,12 @@ OSGi -- отраслевой стандарт.</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="d3806004-59a8-4699-878c-7585b5991ac3" targetConnections="6ae0df48-0696-4fab-b9f3-8b57c71493da" archimateElement="d6d70cbc-28db-490e-b4df-4f48fbc14568">
         <bounds x="1716" y="24" width="132" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="d06e3747-a569-4aa0-a0b5-ce3c4876c720" textAlignment="1">
+        <bounds x="720" y="-68" width="113" height="37"/>
+        <sourceConnection id="df78feb8-952e-42e7-8bc7-71652eeeb7e5" source="d06e3747-a569-4aa0-a0b5-ce3c4876c720" target="d2dd76c5-3e1e-43c2-9c02-36b90d6970de"/>
+        <sourceConnection id="c381b84e-2abc-4e35-ac64-0c311033b8a1" source="d06e3747-a569-4aa0-a0b5-ce3c4876c720" target="9f85453d-1810-40ed-8adc-b283c15485ac"/>
+        <content>Реализуют WhiteBoard Pattern</content>
       </child>
     </element>
   </folder>
