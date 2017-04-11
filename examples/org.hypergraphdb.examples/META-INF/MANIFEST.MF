@@ -6,7 +6,8 @@ Bundle-Version: 1.4.0.qualifier
 Bundle-Vendor: AgentLab
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: org.osgi.service.component.annotations
-Service-Component: OSGI-INF/org.hypergraphdb.examples.TestComponentImpl.xml
+Service-Component: OSGI-INF/org.hypergraphdb.examples.TestComponentImpl.xml,
+ OSGI-INF/org.hypergraphdb.prolog.examples.TestPrologComponentImpl.xml
 Bundle-ActivationPolicy: lazy
 Export-Package: org.hypergraphdb.examples
 Require-Bundle: org.hypergraphdb.core;bundle-version="1.4.0",
