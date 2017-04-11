@@ -53,7 +53,7 @@ public class TestComponentImpl {
 		// without try-with-resources
 		HyperGraph graph = new HyperGraph(dbLocation);
 		try {
-			System.out.println("Query");
+			System.out.println("Query"); //$NON-NLS-1$
 			// Querying is done conveniently by using the static helper class "hg"
 			for (Object s : hg.getAll(graph, hg.type(String.class))) {
 				System.out.println(s);
