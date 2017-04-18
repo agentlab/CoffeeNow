@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Commandsparser
+Bundle-SymbolicName: ru.agentlab.coffeenow.commandsparser
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.service.component.annotations
+Service-Component: OSGI-INF/ru.agentlab.coffeenow.commandsparser.UserCommandParser.xml
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.hypergraphdb.core;bundle-version="1.4.0"
