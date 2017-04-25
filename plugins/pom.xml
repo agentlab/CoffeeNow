@@ -15,6 +15,7 @@
 	<modules>
 		<module>org.telegram.telegrambots</module>
 		<module>ru.agentlab.telegrambots.service</module>
+		<module>ru.agentlab.maia.hg</module>
 	</modules>
 	
 	<build>

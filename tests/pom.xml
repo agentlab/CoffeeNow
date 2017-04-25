@@ -14,6 +14,7 @@
 	
 	<modules>
 		<module>org.telegram.telegrambots.tests</module>
+		<module>ru.agentlab.maia.hg.tests</module>
 	</modules>
 	
 	<build>

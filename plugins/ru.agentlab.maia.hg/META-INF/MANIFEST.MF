@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MAIA HypergraphDB
+Bundle-SymbolicName: ru.agentlab.maia.hg
+Bundle-Version: 1.0.0.qualifier
+Export-Package: ru.agentlab.maia.hg;version="1.0.0";uses:="org.hypergraphdb,org.hypergraphdb.atom",
+ ru.agentlab.maia.hg.app;version="1.0.0";uses:="org.hypergraphdb,org.hypergraphdb.app.management",
+ ru.agentlab.maia.hg.type;version="1.0.0";uses:="org.hypergraphdb,org.hypergraphdb.type"
+Import-Package: com.google.common.base,
+ org.hypergraphdb,
+ org.hypergraphdb.app.management,
+ org.hypergraphdb.atom,
+ org.hypergraphdb.indexing,
+ org.hypergraphdb.query,
+ org.hypergraphdb.type,
+ ru.agentlab.maia.hg,
+ ru.agentlab.maia.hg.app,
+ ru.agentlab.maia.hg.type
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
