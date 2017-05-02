@@ -91,6 +91,8 @@
       <requirement
           name="org.hypergraphdb.prolog.feature.feature.group"/>
       <requirement
+          name="org.mnode.ical4j"/>
+      <requirement
           name="*"/>
       <sourceLocator
           rootFolder="${ru.agentlab.coffeenow.git.clone.location}"
