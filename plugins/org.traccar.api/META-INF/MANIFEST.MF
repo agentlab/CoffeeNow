@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Manager
+Bundle-Name: Traccar API
 Bundle-SymbolicName: org.traccar.api
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
@@ -8,4 +8,8 @@ Import-Package: net.fortuna.ical4j.data;version="2.0.0",
  net.fortuna.ical4j.filter;version="2.0.0",
  net.fortuna.ical4j.model;version="2.0.0",
  net.fortuna.ical4j.model.component;version="2.0.0",
- org.slf4j;version="1.7.2"
+ org.slf4j
+Export-Package: org.traccar.geofence,
+ org.traccar.helper,
+ org.traccar.model,
+ org.traccar.services
