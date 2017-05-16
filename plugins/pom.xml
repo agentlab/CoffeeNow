@@ -14,8 +14,12 @@
 	
 	<modules>
 		<module>org.telegram.telegrambots</module>
-		<module>ru.agentlab.telegrambots.service</module>
+		
+		<module>org.traccar.api</module>
+		<module>ru.agentlab.coffeenow.locationdetector</module>
+		<module>ru.agentlab.maia.dsl</module>
 		<module>ru.agentlab.maia.hg</module>
+		<module>ru.agentlab.telegrambots.service</module>
 	</modules>
 	
 	<build>
