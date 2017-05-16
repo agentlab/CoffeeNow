@@ -20,8 +20,10 @@ import java.util.Collection;
 import org.traccar.model.Device;
 import org.traccar.model.DeviceTotalDistance;
 
-interface Devices {
+public interface Devices {
     Collection<Device> get(boolean all, long userId);
+
+    Collection<Device> get();
 
     Device add(Device entity);
 

@@ -20,8 +20,10 @@ import java.util.List;
 
 import org.traccar.model.Position;
 
-interface Positions {
+public interface Positions {
 
     Collection<Position> get(long deviceId, List<Long> positionIds, String from, String to);
+
+    Collection<Position> get();
 
 }
