@@ -11,17 +11,23 @@ public class CoffeHouse {
 	private Boolean mastercard;
 	private Boolean aboniment;
 	public CoffeHouse(){}
-	public int getAction(String a, String b){
-		String c = a+" + "+b;
-		switch(c){
-		case "Дабл Капучино + торт «Москва»":
-			return 141;
-		case "Дабл Капучино + Дабл Капучино «стандарт»":
-			return 265;
-		case "Дабл Капучино Айс + Дабл Капучино Айс":
-			return 275;
-		case "Дабл Капучино сливочный + Дабл Капучино сливочный":
-			return 191;
+	public int getAction(String c){
+		int sum = 0;
+		 CharSequence a = new String("Дабл Капучино + торт «Москва»");
+		if(c.contains(a)){
+			sum += 141;
+		}
+		 CharSequence b = new String("Дабл Капучино + Дабл Капучино «стандарт»");
+		if(c.contains(b)){
+			sum += 265;
+		}
+		 CharSequence d = new String("Дабл Капучино Айс + Дабл Капучино Айс");
+		if(c.contains(d)){
+			sum += 275;
+		}
+		 CharSequence e = new String("Дабл Капучино сливочный + Дабл Капучино сливочный");
+		if(c.contains(e)){
+			sum += 191;
 		}
 		return 0;
 	}
