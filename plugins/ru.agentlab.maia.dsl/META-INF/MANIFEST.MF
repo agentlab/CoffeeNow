@@ -5,4 +5,5 @@ Bundle-SymbolicName: ru.agentlab.maia.dsl
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: com.google.common.base;version="15.0.0"
-Export-Package: ru.agentlab.maia.dsl
+Export-Package: ru.agentlab.maia.annotations,
+ ru.agentlab.maia.dsl
