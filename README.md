@@ -3,13 +3,15 @@ Coffee Shop Intelligent Assistant
 
 ## How To Setup Eclipse IDE
 
-0. Prerequisits:
+### Prerequisits:
 
   * JDK 8,
   * Maven 3.x,
   * Eclipse Installer
 
-1. Use this information for instructions in paragraph #2
+### How to configure custom Eclipse installation for this project with Eclipse Installer
+
+Configuration settings for Eclipse Installer
 
   * Eclipse Product:
     * Eclipse IDE for Java with Maven and Tools
@@ -23,6 +25,6 @@ Coffee Shop Intelligent Assistant
   * Select Target platform version:
     * Neon
 
-2. Use instructions from here: [Настройка Eclipse IDE под проекты с помощью Eclipse Installer](https://github.com/agentlab/ru.agentlab.parent/wiki/Настройка-Eclipse-IDE-под-проекты-с-помощью-Eclipse-Installer)
+Use configuration settings above when following instructions from here: [Настройка Eclipse IDE под проекты с помощью Eclipse Installer](https://github.com/agentlab/ru.agentlab.parent/wiki/Настройка-Eclipse-IDE-под-проекты-с-помощью-Eclipse-Installer)
 
-3. Run LaunchConfigs in Eclipse IDE
+### Run LaunchConfig in your new custom Eclipse IDE installation
