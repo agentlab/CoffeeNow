@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" name="ru.agentlab.coffeenow.locationdetector.impl.EventManager">
+   <reference bind="bindEventHandler" cardinality="0..n" interface="ru.agentlab.coffeenow.locationdetector.EventHandler" name="EventHandler" policy="dynamic" unbind="unbindEventHandler"/>
+   <implementation class="ru.agentlab.coffeenow.locationdetector.impl.EventManager"/>
+</scr:component>

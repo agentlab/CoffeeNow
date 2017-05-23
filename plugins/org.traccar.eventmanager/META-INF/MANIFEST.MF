@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Traccar Event Manager
+Bundle-SymbolicName: org.traccar.eventmanager
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: org.osgi.service.component.annotations,
+ org.traccar.model
+Service-Component: OSGI-INF/ru.agentlab.coffeenow.locationdetector.impl.EventManager.xml
+Bundle-ActivationPolicy: lazy
+Export-Package: ru.agentlab.coffeenow.locationdetector
