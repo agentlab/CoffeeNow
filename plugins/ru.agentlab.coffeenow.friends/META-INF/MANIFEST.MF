@@ -4,5 +4,8 @@ Bundle-Name: Friendsfinder
 Bundle-SymbolicName: ru.agentlab.coffeenow.friends
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Import-Package: org.traccar.model,
+Import-Package: org.osgi.service.component.annotations;version="1.3.0",
+ org.traccar.model,
  org.traccar.services
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/ru.agentlab.coffeenow.friendsfinder.Friends.xml

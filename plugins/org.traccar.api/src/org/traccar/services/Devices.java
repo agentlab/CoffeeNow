@@ -23,7 +23,7 @@ import org.traccar.model.DeviceTotalDistance;
 public interface Devices {
     Collection<Device> get(boolean all, long userId);
 
-    Collection<Device> get();
+    Collection<Device> getDevices();
 
     Device add(Device entity);
 

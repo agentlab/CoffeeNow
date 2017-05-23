@@ -24,6 +24,6 @@ public interface Positions {
 
     Collection<Position> get(long deviceId, List<Long> positionIds, String from, String to);
 
-    Collection<Position> get();
+    Collection<Position> getPositions();
 
 }
