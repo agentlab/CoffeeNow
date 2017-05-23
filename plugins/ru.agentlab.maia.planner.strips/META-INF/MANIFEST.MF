@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Planner
+Bundle-SymbolicName: ru.agentlab.maia.planner.strips
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: AgentLab
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: ru.agentlab.maia.dsl,
+ ru.agentlab.maia.planner
