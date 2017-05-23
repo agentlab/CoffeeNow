@@ -17,7 +17,7 @@ import org.traccar.services.Positions;
  * @author kiric
  *
  */
-public class friendsTest implements Positions, Devices {
+public class FriendsTest implements Positions, Devices {
 
 	@Override
 	public Collection<Device> get(boolean all, long userId) {
