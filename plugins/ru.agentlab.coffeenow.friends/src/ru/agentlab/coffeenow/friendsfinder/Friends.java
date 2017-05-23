@@ -10,6 +10,7 @@ import java.util.TimerTask;
 
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Deactivate;
 import org.osgi.service.component.annotations.Reference;
 import org.traccar.model.Device;
 import org.traccar.model.Position;
@@ -21,8 +22,8 @@ import org.traccar.services.Positions;
  * @author kiric
  *
  */
-@Component()
-public class Friends extends TimerTask {
+@Component(service = Friends.class)
+public class Friends {
 
 	private Positions positions;
 
@@ -34,18 +35,24 @@ public class Friends extends TimerTask {
 
 	private int MYID = 0;
 
-	@Reference()
-	public void bindDevices(Devices devices) {
+    private Timer timer;
+
+    @Reference
+    private void bindDevices(Devices devices) {
 		this.devices = devices;
 	}
-	public void unbindDevices(Devices devices) {
+
+    private void unbindDevices(Devices devices) {
 	}
 
-	@Reference()
-	public void bindPosition(Positions position) {
+    @Reference
+    private void bindPosition(Positions position) {
+        System.out.println("bindPosition");
 		this.positions = position;
 	}
-	public void unbindPosition(Positions position) {
+
+    private void unbindPosition(Positions position) {
+        System.out.println("unbindPosition"); //$NON-NLS-1$
 	}
 
 	public boolean isFriendCloser (double x1, double x2, double y1, double y2, double radius){
@@ -54,7 +61,7 @@ public class Friends extends TimerTask {
 
 	public Map<String, Long> getDevices(){
 		devicesCollection = devices.getDevices();
-		Map<String, Long> result = new HashMap<String, Long>();
+		Map<String, Long> result = new HashMap<>();
 		for (Device d : devicesCollection){
 			result.put(d.getName(), d.getId());
 		}
@@ -87,21 +94,24 @@ public class Friends extends TimerTask {
 				}
 			}
 		}
-
 	}
-
-    @Override
-    public void run() {
-    	getPositions(MYID);
-    }
 
 	@Activate
-	public void start(){
-		final TimerTask task = new Friends();
-		Timer timer = new Timer(true);
-        timer.scheduleAtFixedRate(task, 0, 10*1000);
+    private void start() {
+		timer = new Timer(true);
+        timer.scheduleAtFixedRate(new TimerTask()
+        {
+            @Override
+            public void run() {
+                getPositions(MYID);
+            }
+
+        }, 0, 10 * 1000);
 	}
 
-
-
+    @Deactivate
+    private void stop() {
+        System.out.println("stop"); //$NON-NLS-1$
+        timer.cancel();
+    }
 }

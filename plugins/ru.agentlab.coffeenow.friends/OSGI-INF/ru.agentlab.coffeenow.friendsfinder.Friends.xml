@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start" name="ru.agentlab.coffeenow.friendsfinder.Friends">
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start" deactivate="stop" name="ru.agentlab.coffeenow.friendsfinder.Friends">
+   <service>
+      <provide interface="ru.agentlab.coffeenow.friendsfinder.Friends"/>
+   </service>
    <reference bind="bindDevices" cardinality="1..1" interface="org.traccar.services.Devices" name="Devices" policy="static" unbind="unbindDevices"/>
    <reference bind="bindPosition" cardinality="1..1" interface="org.traccar.services.Positions" name="Position" policy="static" unbind="unbindPosition"/>
    <implementation class="ru.agentlab.coffeenow.friendsfinder.Friends"/>

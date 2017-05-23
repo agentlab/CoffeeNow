@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.pde.ui.JunitLaunchConfig">
+<booleanAttribute key="append.args" value="true"/>
+<stringAttribute key="application" value="org.eclipse.pde.junit.runtime.coretestapplication"/>
+<booleanAttribute key="askclear" value="false"/>
+<booleanAttribute key="automaticAdd" value="false"/>
+<booleanAttribute key="automaticValidate" value="true"/>
+<stringAttribute key="bootstrap" value=""/>
+<stringAttribute key="checked" value="[NONE]"/>
+<booleanAttribute key="clearConfig" value="true"/>
+<booleanAttribute key="clearws" value="true"/>
+<booleanAttribute key="clearwslog" value="false"/>
+<stringAttribute key="configLocation" value="${workspace_loc}/.metadata/.plugins/org.eclipse.pde.core/pde-junit"/>
+<booleanAttribute key="default" value="false"/>
+<booleanAttribute key="default_auto_start" value="true"/>
+<booleanAttribute key="includeOptional" value="false"/>
+<stringAttribute key="location" value="${workspace_loc}/../junit-workspace"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/ru.agentlab.coffeenow.friends.tests/src/ru/agentlab/coffeenow/FriendsTest.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+<listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ru.agentlab.coffeenow.FriendsTest"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-os ${target.os} -ws ${target.ws} -arch ${target.arch} -nl ${target.nl} -consoleLog"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ru.agentlab.coffeenow.friends.tests"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.pde.ui.workbenchClasspathProvider"/>
+<stringAttribute key="pde.version" value="3.3"/>
+<stringAttribute key="product" value=""/>
+<booleanAttribute key="run_in_ui_thread" value="true"/>
+<stringAttribute key="selected_target_plugins" value="ch.qos.logback.classic@default:default,ch.qos.logback.core@default:default,ch.qos.logback.slf4j@default:false,com.codeaffine.osgi.test.util@default:default,com.ibm.icu@default:default,groovy-all@default:default,javax.xml@default:default,org.apache.commons.codec*1.9.0.v20170208-1614@default:default,org.apache.commons.collections4@default:default,org.apache.commons.lang3@default:default,org.apache.felix.gogo.command@default:default,org.apache.felix.gogo.runtime@default:default,org.apache.felix.gogo.shell@default:default,org.eclipse.core.commands@default:default,org.eclipse.core.contenttype@default:default,org.eclipse.core.databinding.observable@default:default,org.eclipse.core.databinding.property@default:default,org.eclipse.core.databinding@default:default,org.eclipse.core.jobs@default:default,org.eclipse.core.runtime@default:true,org.eclipse.equinox.app@default:default,org.eclipse.equinox.cm@default:default,org.eclipse.equinox.common@2:true,org.eclipse.equinox.concurrent@default:default,org.eclipse.equinox.console@default:default,org.eclipse.equinox.ds@1:true,org.eclipse.equinox.event@default:default,org.eclipse.equinox.frameworkadmin.equinox@default:default,org.eclipse.equinox.frameworkadmin@default:default,org.eclipse.equinox.launcher.cocoa.macosx.x86_64@default:false,org.eclipse.equinox.launcher.gtk.aix.ppc64@default:false,org.eclipse.equinox.launcher.gtk.aix.ppc@default:false,org.eclipse.equinox.launcher.gtk.hpux.ia64@default:false,org.eclipse.equinox.launcher.gtk.linux.ppc64@default:false,org.eclipse.equinox.launcher.gtk.linux.ppc64le@default:false,org.eclipse.equinox.launcher.gtk.linux.ppc@default:false,org.eclipse.equinox.launcher.gtk.linux.s390@default:false,org.eclipse.equinox.launcher.gtk.linux.s390x@default:false,org.eclipse.equinox.launcher.gtk.linux.x86@default:false,org.eclipse.equinox.launcher.gtk.linux.x86_64@default:false,org.eclipse.equinox.launcher.gtk.solaris.sparcv9@default:false,org.eclipse.equinox.launcher.gtk.solaris.x86_64@default:false,org.eclipse.equinox.launcher.win32.win32.x86@default:false,org.eclipse.equinox.launcher.win32.win32.x86_64@default:false,org.eclipse.equinox.launcher@default:default,org.eclipse.equinox.metatype@default:default,org.eclipse.equinox.preferences@default:default,org.eclipse.equinox.region@default:false,org.eclipse.equinox.registry@default:default,org.eclipse.equinox.security.macosx@default:false,org.eclipse.equinox.security.win32.x86@default:false,org.eclipse.equinox.security.win32.x86_64@default:false,org.eclipse.equinox.security@default:default,org.eclipse.equinox.simpleconfigurator.manipulator@default:default,org.eclipse.equinox.simpleconfigurator@1:true,org.eclipse.equinox.util@default:default,org.eclipse.jdt.junit.runtime@default:default,org.eclipse.osgi.compatibility.state@default:false,org.eclipse.osgi.services*3.5.100.v20160504-1419@default:default,org.eclipse.osgi.util*3.3.100.v20150423-1351@default:default,org.eclipse.osgi@-1:true,org.eclipse.pde.junit.runtime@default:default,org.hamcrest.core@default:default,org.hamcrest.generator@default:default,org.hamcrest.integration@default:default,org.hamcrest.library@default:default,org.hypergraphdb.app.management@default:default,org.hypergraphdb.core@default:default,org.hypergraphdb.mjson@default:default,org.hypergraphdb.p2p@default:default,org.hypergraphdb.prolog@default:default,org.hypergraphdb.storage.hgbdbje@default:default,org.json@default:default,org.junit@default:default,org.mnode.ical4j@default:default,org.mockito.mockito-all@default:default,org.mockito@default:default,org.objenesis@default:default,org.sat4j.core@default:default,org.sat4j.pb@default:default,org.slf4j.api@default:default,org.slf4j.jcl@default:default,org.slf4j.jul@default:default,org.slf4j.log4j@default:default,org.tukaani.xz@default:default"/>
+<stringAttribute key="selected_workspace_plugins" value="org.traccar.api@default:default,ru.agentlab.coffeenow.friends.tests@default:default,ru.agentlab.coffeenow.friends@default:default"/>
+<booleanAttribute key="show_selected_only" value="false"/>
+<stringAttribute key="templateConfig" value="${target_home}\configuration\config.ini"/>
+<booleanAttribute key="tracing" value="false"/>
+<booleanAttribute key="useCustomFeatures" value="false"/>
+<booleanAttribute key="useDefaultConfig" value="true"/>
+<booleanAttribute key="useDefaultConfigArea" value="false"/>
+<booleanAttribute key="useProduct" value="false"/>
+</launchConfiguration>

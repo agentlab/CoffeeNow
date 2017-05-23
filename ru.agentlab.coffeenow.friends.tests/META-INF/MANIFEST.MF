@@ -4,5 +4,8 @@ Bundle-Name: FriendsTest
 Bundle-SymbolicName: ru.agentlab.coffeenow.friends.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Import-Package: org.traccar.model,
- org.traccar.services
+Import-Package: com.codeaffine.osgi.test.util;version="0.1.0",
+ org.junit;version="4.12.0",
+ org.traccar.model,
+ org.traccar.services,
+ ru.agentlab.coffeenow.friendsfinder
