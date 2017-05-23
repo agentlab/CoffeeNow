@@ -1,0 +1,50 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GetPositionsFromTraccar",
+		"_postman_id": "78c2aade-1d3c-525a-948d-f4dedded5d18",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://demo.traccar.org/api/devices",
+			"request": {
+				"url": "http://demo.traccar.org/api/devices",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic a2lyaWNoNzRAZ21haWwuY29tOm1lZ2FiYXNzNzQ=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://demo.traccar.org/api/positions",
+			"request": {
+				"url": "http://demo.traccar.org/api/positions",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic a2lyaWNoNzRAZ21haWwuY29tOm1lZ2FiYXNzNzQ=",
+						"description": ""
+					},
+					{
+						"key": "deviceId",
+						"value": "793579",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
