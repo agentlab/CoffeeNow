@@ -1,7 +1,7 @@
 /**
  *
  */
-package friendsfinder;
+package ru.agentlab.coffeenow.friendsfinder;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
