@@ -15,8 +15,8 @@ Coffee Shop Intelligent Assistant
   * Product version: Neon
 
   * Select 2 Projects (Be careful! We need 2 projects only!):
-  ** CoffeeNow
-  ** OSGi Projects
+    * CoffeeNow
+    * OSGi Projects
   * Select Target platform version: Neon
 
 2. Use instructions from here: [Настройка Eclipse IDE под проекты с помощью Eclipse Installer](https://github.com/agentlab/ru.agentlab.parent/wiki/Настройка-Eclipse-IDE-под-проекты-с-помощью-Eclipse-Installer)
