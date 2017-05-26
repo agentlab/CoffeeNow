@@ -2,7 +2,7 @@ package ru.agentlab.maia.dsl;
 
 /**
  * Executable action.
- * 
+ *
  * @author Dmitriy Shishkin
  *
  */
@@ -20,7 +20,7 @@ public class Action {
 	/**
 	 * Non-public constructor. Use {@link ActionBuilder} for constructing to
 	 * avoid null-values, duplicate and unused variables
-	 * 
+	 *
 	 * @param name
 	 *            - the name of action
 	 * @param precondition
@@ -52,6 +52,27 @@ public class Action {
 		this.executable = executable;
 		this.variables = variables;
 		this.using = using;
+	}
+
+	/**
+	 * @return the variables
+	 */
+	public Variable<?>[] getVariables() {
+		return variables;
+	}
+
+	/**
+	 * @return the precondition
+	 */
+	public Predicate getPrecondition() {
+		return precondition;
+	}
+
+	/**
+	 * @return the effect
+	 */
+	public Predicate getEffect() {
+		return effect;
 	}
 
 }

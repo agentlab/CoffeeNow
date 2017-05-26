@@ -8,14 +8,16 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 
+import ru.agentlab.maia.planner.AbstractPlanner;
 import ru.agentlab.maia.planner.Planner;
 import ru.agentlab.maia.planner.Problem;
+import ru.agentlab.maia.planner.State;
 
 /**
  * @author Ivanov_AM
  *
  */
-public class StripsPlanner implements Planner {
+public class StripsPlanner extends AbstractPlanner implements Planner {
 
 	@Override
 	public void plan(Problem p) {
@@ -27,9 +29,9 @@ public class StripsPlanner implements Planner {
 		while(solution == null){
 			visited.addAll(currentSolutions);
 			Collection<State> newSolutions = new HashSet<State>();
-			System.out.println("Computing level: " + count++ + "...");
+			System.out.println("Computing level: " + count++ + "...");  //$NON-NLS-1$//$NON-NLS-2$
 			for (State state : currentSolutions) {
-				if (state.solves(p)){
+				if (p.isGoalSatisfied(state)){
 					solution = state;
 					break;
 				}else{
@@ -42,9 +44,9 @@ public class StripsPlanner implements Planner {
 					currentSolutions.add(state);
 			}
 
-			System.out.println("   Expanded states:          "+newSolutions.size());
-			System.out.println("   Number of visited states: "+visited.size());
-			System.out.println("   Level width:              "+currentSolutions.size());
+			System.out.println("   Expanded states:          "+newSolutions.size()); //$NON-NLS-1$
+			System.out.println("   Number of visited states: "+visited.size()); //$NON-NLS-1$
+			System.out.println("   Level width:              "+currentSolutions.size()); //$NON-NLS-1$
 
 			if (currentSolutions.size() == 0)
 				break;
@@ -53,12 +55,12 @@ public class StripsPlanner implements Planner {
 		if (solution != null)
 			printPlan(solution);
 		else
-			System.out.println("NO SOLUTION FOUND");
+			System.out.println("NO SOLUTION FOUND"); //$NON-NLS-1$
 	}
 
 	private State searchSolution(List<State> solutions, Problem p) {
 		for (State state : solutions) {
-			if (state.solves(p)){
+			if (p.isGoalSatisfied(state)){
 				return state;
 			}
 		}

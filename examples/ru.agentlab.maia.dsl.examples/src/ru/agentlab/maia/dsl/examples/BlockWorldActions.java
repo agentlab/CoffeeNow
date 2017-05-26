@@ -30,7 +30,7 @@ public class BlockWorldActions {
 	public static final Signature1<String>         PICKUP   = signature("PICKUP", String.class);
 	public static final Signature1<String>         PUTDOWN  = signature("PUTDOWN", String.class);
 	// @formatter:on
-	
+
 	@Inject
 	BlockWorldService service;
 

@@ -23,6 +23,10 @@ public class Domain {
 	public Domain() {
 	}
 
+	public void addPredicate(Predicate p) {
+		predicates.put(p.getName(), p);
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder("(define (domain " + name + ")\n");

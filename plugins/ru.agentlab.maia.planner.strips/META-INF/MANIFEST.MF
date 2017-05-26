@@ -7,3 +7,4 @@ Bundle-Vendor: AgentLab
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: ru.agentlab.maia.dsl,
  ru.agentlab.maia.planner
+Export-Package: ru.agentlab.maia.planner.strips

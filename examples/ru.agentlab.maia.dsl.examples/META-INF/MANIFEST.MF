@@ -8,4 +8,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: ru.agentlab.maia.dsl.examples
 Require-Bundle: ru.agentlab.maia.dsl;bundle-version="1.0.0"
 Import-Package: javax.inject;version="1.0.0",
- ru.agentlab.maia.annotations
+ org.junit;version="4.12.0",
+ ru.agentlab.maia.annotations,
+ ru.agentlab.maia.planner,
+ ru.agentlab.maia.planner.strips
