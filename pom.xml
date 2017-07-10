@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>ru.agentlab</groupId>
 		<artifactId>ru.agentlab.parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.1-SNAPSHOT</version>
 	</parent>
 
 	<modules>
@@ -84,7 +84,7 @@
 	<repositories>
 		<repository>
 			<id>agentlab</id>
-			<url>http://agentlab.ru/maven/repository</url>
+			<url>https://agentlab.ru/maven/repository</url>
 		</repository>
 	</repositories>
 	
