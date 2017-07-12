@@ -20,14 +20,16 @@ import org.telegram.telegrambots.logging.BotLogger;
  * @author amivanoff
  *
  */
-@Component()
+@Component(immediate = true)
 public class TelegramBotsManager {
+	{
+		ApiContextInitializer.init();
+	}
 
     protected List<LongPollingBot> pollingBots = new ArrayList<>();
 
     @Activate
     public void activate() {
-        ApiContextInitializer.init();
     }
 
 	@Reference(policy = ReferencePolicy.DYNAMIC, bind = "bindPollingBot", cardinality = ReferenceCardinality.MULTIPLE)
