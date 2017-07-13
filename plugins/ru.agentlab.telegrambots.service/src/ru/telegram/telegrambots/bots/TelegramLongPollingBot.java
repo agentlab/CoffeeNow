@@ -1,5 +1,8 @@
 package ru.telegram.telegrambots.bots;
 
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -16,8 +19,7 @@ import org.telegram.telegrambots.api.methods.updates.SetWebhook;
 import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 import org.telegram.telegrambots.generics.LongPollingBot;
 
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
+import ru.telegram.telegrambots.ApiContextInitializer;
 
 /**
  * @author Ruben Bermudez
@@ -27,6 +29,10 @@ import java.nio.charset.StandardCharsets;
  * @date 14 of January of 2016
  */
 public abstract class TelegramLongPollingBot extends DefaultAbsSender implements LongPollingBot {
+	static {
+		ApiContextInitializer.init();
+	}
+
     public TelegramLongPollingBot() {
         this(ApiContext.getInstance(DefaultBotOptions.class));
     }
