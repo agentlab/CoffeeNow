@@ -16,6 +16,7 @@
 		<module>org.hypergraphdb.examples</module>
 		<module>ru.agentlab.maia.dsl.examples</module>
 		<module>ru.agentlab.telegrambots.service.examples</module>
+		<module>org.apache.uima.fit.osgi.examples</module>
 	</modules>
 
 </project>

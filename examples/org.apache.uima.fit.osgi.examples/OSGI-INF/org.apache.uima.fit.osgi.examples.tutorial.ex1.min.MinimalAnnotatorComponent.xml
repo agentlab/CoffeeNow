@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start" deactivate="stop" name="org.apache.uima.fit.osgi.examples.tutorial.ex1.min.MinimalAnnotatorComponent">
+   <service>
+      <provide interface="org.apache.uima.fit.osgi.AnalysisComponent"/>
+   </service>
+   <implementation class="org.apache.uima.fit.osgi.examples.tutorial.ex1.min.MinimalAnnotatorComponent"/>
+</scr:component>

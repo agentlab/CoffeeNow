@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>org.apache.uima.fit.osgi.examples</artifactId>
+	<packaging>eclipse-plugin</packaging>
+
+	<parent>
+		<groupId>ru.agentlab.coffeenow</groupId>
+		<artifactId>ru.agentlab.coffeenow.examples</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<build>
+		<plugins>
+			<plugin>
+                <groupId>org.apache.uima</groupId>
+                <artifactId>jcasgen-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <typeSystemIncludes>
+                                <typeSystemInclude>resources/org/apache/uima/fit/examples/TypeSystem.xml</typeSystemInclude>
+                            </typeSystemIncludes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+		</plugins>
+	</build>
+
+</project>

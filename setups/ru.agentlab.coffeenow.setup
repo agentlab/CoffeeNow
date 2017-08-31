@@ -93,6 +93,20 @@
       <requirement
           name="org.mnode.ical4j"/>
       <requirement
+          name="org.apache.uima.runtime"/>
+      <requirement
+          name="org.apache.uima.fit"/>
+      <requirement
+          name="org.apache.uima.fit.osgi"/>
+      <requirement
+          name="org.apache.servicemix.bundles.spring-beans"/>
+      <requirement
+          name="org.apache.servicemix.bundles.spring-context"/>
+      <requirement
+          name="org.apache.servicemix.bundles.spring-core"/>
+      <requirement
+          name="org.eclipse.gemini.blueprint.io"/>
+      <requirement
           name="*"/>
       <sourceLocator
           rootFolder="${ru.agentlab.coffeenow.git.clone.location}"
@@ -103,6 +117,8 @@
             url="https://agentlab.ru/pd/p2/eclipseorbit/"/>
         <repository
             url="https://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
+        <repository
+            url="http://agentlab.ru/pd/p2/nlp-uima/"/>
       </repositoryList>
       <repositoryList
           name="Oxygen">
@@ -110,6 +126,8 @@
             url="https://agentlab.ru/pd/p2/eclipseorbit/"/>
         <repository
             url="https://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
+        <repository
+            url="http://agentlab.ru/pd/p2/nlp-uima/"/>
       </repositoryList>
     </targlet>
   </setupTask>
