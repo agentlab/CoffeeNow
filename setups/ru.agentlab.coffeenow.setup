@@ -71,6 +71,12 @@
       <requirement
           name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider"/>
       <requirement
+          name="org.apache.commons.fileupload"/>
+      <requirement
+          name="org.apache.commons.io"/>
+      <requirement
+          name="org.apache.commons.lang"/>
+      <requirement
           name="org.glassfish.jersey.media.jersey-media-json-jackson"/>
       <requirement
           name="org.glassfish.jersey.core.jersey-server"/>
@@ -118,7 +124,7 @@
         <repository
             url="https://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
         <repository
-            url="http://agentlab.ru/pd/p2/nlp-uima/"/>
+            url="https://agentlab.ru/pd/p2/nlp-uima/"/>
       </repositoryList>
       <repositoryList
           name="Oxygen">
@@ -127,7 +133,7 @@
         <repository
             url="https://agentlab.ru/p2/org.hypergraphdb/1.4.0.201703281331/"/>
         <repository
-            url="http://agentlab.ru/pd/p2/nlp-uima/"/>
+            url="https://agentlab.ru/pd/p2/nlp-uima/"/>
       </repositoryList>
     </targlet>
   </setupTask>
