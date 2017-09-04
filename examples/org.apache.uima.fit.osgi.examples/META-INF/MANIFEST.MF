@@ -5,7 +5,9 @@ Bundle-SymbolicName: org.apache.uima.fit.osgi.examples
 Bundle-Version: 3.0.0.qualifier
 Bundle-Vendor: AgentLab
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: org.apache.uima.fit.osgi.examples.tutorial.ex1
+Export-Package: org.apache.uima.fit.osgi.examples.tutorial.ex1,
+ org.apache.uima.fit.osgi.examples.tutorial.type,
+ org.apache.uima.fit.osgi.examples.type
 Require-Bundle: org.apache.uima.fit;bundle-version="3.0.0",
  org.apache.uima.fit.osgi;bundle-version="3.0.0",
  org.apache.uima.runtime;bundle-version="3.0.0"

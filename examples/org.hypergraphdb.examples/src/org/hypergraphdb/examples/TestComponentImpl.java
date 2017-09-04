@@ -23,16 +23,21 @@ public class TestComponentImpl {
 
 	@Activate
 	public void start() {
+
+		Book myBook = new Book("Critique of Pure Reason", "E. Kant"); //$NON-NLS-1$ //$NON-NLS-2$
+		Book myBook2 = new Book("222Critique of Pure Reason", "222E. Kant"); //$NON-NLS-1$ //$NON-NLS-2$
+		myBook2.setBook(myBook);
+
 		// with try-with-resources
 		try (HyperGraph graph = new HyperGraph(dbLocation)) {
-			HGHandle stringHandle, bookHandle, arrayHandle;
+			HGHandle stringHandle, bookHandle, bookHandle2, arrayHandle;
 
 			String x = "Hello World"; //$NON-NLS-1$
 			stringHandle = graph.add(x);
 			graph.add("Hello World 2"); //$NON-NLS-1$
 
-			Book myBook = new Book("Critique of Pure Reason", "E. Kant"); //$NON-NLS-1$ //$NON-NLS-2$
 			bookHandle = graph.add(myBook);
+			bookHandle2 = graph.add(myBook2);
 
 			arrayHandle = graph.add(new double[] { 0.9, 0.1, 4.3434 });
 
@@ -44,7 +49,7 @@ public class TestComponentImpl {
 			// ...
 
 			// Now, we need to delete the object from the database.
-			graph.remove(bookHandle);
+			//graph.remove(bookHandle);
 		}
 		catch (Throwable t) {
 			t.printStackTrace();
@@ -57,6 +62,25 @@ public class TestComponentImpl {
 			// Querying is done conveniently by using the static helper class "hg"
 			for (Object s : hg.getAll(graph, hg.type(String.class))) {
 				System.out.println(s);
+			}
+
+			for (Object s : hg.getAll(graph, hg.type(Book.class))) {
+				System.out.print("book: "); //$NON-NLS-1$
+				System.out.println(s);
+				if(s instanceof Book) {
+					System.out.print("\tsub-book: "); //$NON-NLS-1$
+					System.out.println(((Book)s).getBook());
+					((Book)s).setYearPublished(2000);
+				}
+			}
+
+			for (Object s : hg.getAll(graph, hg.type(Book.class))) {
+				System.out.print("book: "); //$NON-NLS-1$
+				System.out.println(s);
+				if(s instanceof Book) {
+					System.out.print("\tsub-book: "); //$NON-NLS-1$
+					System.out.println(((Book)s).getBook());
+				}
 			}
 		}
 		finally {

@@ -11,10 +11,10 @@
 		<artifactId>ru.agentlab.coffeenow.parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	
+
 	<modules>
 		<module>org.hypergraphdb.examples</module>
-		<module>ru.agentlab.maia.dsl.examples</module>
+		<!--<module>ru.agentlab.maia.dsl.examples</module>-->
 		<module>ru.agentlab.telegrambots.service.examples</module>
 		<module>org.apache.uima.fit.osgi.examples</module>
 	</modules>

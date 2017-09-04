@@ -8,6 +8,8 @@ public class Book {
 	protected String title;
 	protected String author;
 
+	protected Book book;
+
 	/**
 	 * We need default constructor for hgdb
 	 */
@@ -70,5 +72,19 @@ public class Book {
 	 */
 	public void setAuthor(String author) {
 		this.author = author;
+	}
+
+	/**
+	 * @return the book
+	 */
+	public Book getBook() {
+		return book;
+	}
+
+	/**
+	 * @param book the book to set
+	 */
+	public void setBook(Book book) {
+		this.book = book;
 	}
 }
