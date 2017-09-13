@@ -20,6 +20,7 @@
 		<module>ru.agentlab.maia.dsl</module>
 		<module>ru.agentlab.maia.hg</module>
 		<module>ru.agentlab.telegrambots.service</module>
+		<module>org.apache.uima.fit.osgi</module>
 	</modules>
 	
 	<build>
