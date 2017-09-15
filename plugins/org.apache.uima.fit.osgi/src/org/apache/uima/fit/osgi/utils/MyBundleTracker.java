@@ -26,10 +26,11 @@ import org.slf4j.LoggerFactory;
 public class MyBundleTracker extends BundleTracker {
 	private final Logger log = LoggerFactory.getLogger(MyBundleTracker.class);
 
-	protected static ArrayList<String> tdLocations = new ArrayList<>();
-	protected static String[] tmp = {};
+	protected static final int stateMask = Bundle.STARTING | Bundle.STOPPING | Bundle.RESOLVED | Bundle.INSTALLED | Bundle.UNINSTALLED;
+	protected static final ArrayList<String> tdLocations = new ArrayList<>();
+	protected static final String[] tmp = {};
 
-	public MyBundleTracker(BundleContext context, int stateMask, BundleTrackerCustomizer<?> customizer) {
+	public MyBundleTracker(BundleContext context, BundleTrackerCustomizer<?> customizer) {
 		super(context, stateMask, customizer);
 	}
 
