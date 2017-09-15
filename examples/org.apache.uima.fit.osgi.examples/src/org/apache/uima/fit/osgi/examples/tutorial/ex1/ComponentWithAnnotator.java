@@ -10,9 +10,13 @@ import org.osgi.framework.BundleContext;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Deactivate;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Component
 public class ComponentWithAnnotator {
+	private final Logger log = LoggerFactory.getLogger(ComponentWithAnnotator.class);
+
 	/*
 	 * (non-Javadoc)
 	 *
@@ -21,6 +25,7 @@ public class ComponentWithAnnotator {
 	 */
 	@Activate
 	public void start(BundleContext context) {
+		log.debug("Start component");
 		try {
 			String text = "The meeting was moved from Yorktown 01-144 to Hawthorne 1S-W33.";
 
@@ -45,6 +50,6 @@ public class ComponentWithAnnotator {
 	 */
 	@Deactivate
 	public void stop(BundleContext context) throws Exception {
-		System.out.println("Goodbye World!!");
+		log.debug("Stop component");
 	}
 }
