@@ -9,15 +9,22 @@
    <launcherArgs>
       <programArgs>-consoleLog -console
       </programArgs>
-      <vmArgs>-Declipse.ignoreApp=true -Dosgi.noShutdown=true -DMyBotUserName=CoffeeNowAgentlabBot -DMyBotToken=344505789:AAGENlNwNZVRmvsXPuNeLqstcPISBQADQCg
+      <vmArgs>-Declipse.ignoreApp=true -Dosgi.noShutdown=true -Declipse.log.level=ALL -Dlogback.configurationFile=logback.xml
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
 
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
    <vm>
       <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8</windows>
    </vm>
+
 
    <plugins>
       <plugin id="ch.qos.logback.classic"/>
