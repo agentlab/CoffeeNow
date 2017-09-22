@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>ru.agentlab.coffeenow</groupId>
 	<artifactId>ru.agentlab.coffeenow.parent</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
@@ -21,6 +21,7 @@
 		<module>tests</module>
 		<module>examples</module>
 		<module>releng</module>
+		<module>products/ru.agentlab.coffeenow.product</module>
 	</modules>
 
 	<build>
@@ -77,15 +78,15 @@
 							</environment>
 					</environments>-->
 				</configuration>
-			</plugin>		
+			</plugin>
 		</plugins>
-	</build>	
-	
+	</build>
+
 	<repositories>
 		<repository>
 			<id>agentlab</id>
 			<url>https://agentlab.ru/maven/repository</url>
 		</repository>
 	</repositories>
-	
+
 </project>
