@@ -19,3 +19,4 @@ Import-Package: org.osgi.framework;version="1.8.0",
  ru.telegram.telegrambots.bots
 Service-Component: OSGI-INF/ru.agentlab.telegrambots.service.examples.MyBot.xml
 Bundle-ActivationPolicy: lazy
+Require-Bundle: org.telegram.telegrambots
